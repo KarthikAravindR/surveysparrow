@@ -1,0 +1,72 @@
+.SideDrawer {
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 200;
+    background: linear-gradient(to right,#AFBAC9, #97A1B2);
+    color: white;
+    padding: 4px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+    
+}
+.Open {
+    transform: translateX(0);
+}
+
+.Close {
+    transform: translateX(100%);
+}
+
+.closeButton{
+    background-color: #ECF1FB;
+    color: black;
+    border: none;
+    float: right;
+    border: 2px solid #ECF1FB;
+    font-size: 1.5rem;
+}
+.closeButton:hover{
+    background-color: #cf0000;
+    color: #ECF1FB;
+    border: 2px solid #ECF1FB;
+    float: right;
+}
+.sidebarNav{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+.sidebarNav button{
+    background-color: #a1aabb00;
+    color: #ECF1FB;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    width: 98%;
+    padding: 10px 0;
+    margin: 5px 0;
+}
+.sidebarNav button:hover{
+    background-color: #ECF1FB;
+    color: black;
+    cursor: pointer;
+}
+.sidebarNav button:last-of-type{
+    background-color: #ECF1FB;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+@media (min-width:900px) {
+    .SideDrawer {
+        display: none;
+    }
+}
+
